@@ -27,20 +27,20 @@ client.on('interactionCreate', async interaction => {
 
 client.on('messageCreate', msg => {
   if (msg.content === '!pingy') {
-    msg.reply('pongy');
+    msg('pongy');
     console.log('ping');
-  } else if (msg.content === '!') {
-    msg.reply('test');
-  } else if (msg.content === '!') {
-    msg.reply('1');
-  } else if (msg.content === '!') {
-    msg.reply('2');
-  } else if (msg.content === '!') {
-    msg.reply('3');
-  } else if (msg.content === '!') {
-    msg.reply('4');
-//  } else if (msg.content === '!stop') {
-//    msg.reply('Shutting Down...');
+  } else if (msg.content === '!test') {
+    msg('Good Test!');
+  } else if (msg.content === '!1') {
+    msg('1');
+  } else if (msg.content === '!2') {
+    msg('2');
+  } else if (msg.content === '!3') {
+    msg('3');
+  } else if (msg.content === '!4') {
+    msg('4');
+  } else if (msg.content === '!stop') {
+    msg.reply('Shutting Down...NOT!');
 //    client.destroy();
   }
 });
