@@ -39,9 +39,9 @@ client.on('messageCreate', msg => {
     msg.reply('3');
   } else if (msg.content === '!') {
     msg.reply('4');
-  } else if (msg.content === '!stop') {
-    msg.reply('Shutting Down...');
-    client.destroy();
+//  } else if (msg.content === '!stop') {
+//    msg.reply('Shutting Down...');
+//    client.destroy();
   }
 });
 
